@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>MY TO DO LIST</h1>
+        <form id="todo-form">
+            <input type="text" id="input" placeholder="Emir's to do list"><button class="button">Save</button>
+        </form>
+        <div class="divisions">
+            <div id="done-div">
+                <p class="done">Todo Done: <span class="todo-done">0</span></p>
+            </div>
+            <div id="progress-div">
+                <p class="progress">Todo On Progress: <span class="todo-on-progress">0</span></p>
+            </div>
+        </div>
+
+        <ul id="todos"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

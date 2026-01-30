@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding-top: 60px;
+
+    background-color: rgb(243, 241, 241);
+}
+
+
+
+.container {
+    background-color: rgb(248, 248, 248);
+
+    min-height: 95vh;
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+
+
+h1 {
+    background: #69fffa;
+    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#input {
+    padding: 15px;
+    min-width: 500px;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+
+    font-family: sans-serif;
+    font-size: 16px;
+
+    box-shadow: 1px 1px 25px gray
+}
+
+.button {
+    background: #69fffa;
+    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+
+    padding: 15px;
+    border-radius: 0px 10px 10px 0;
+    border: 0;
+
+    color: rgb(255, 255, 255);
+
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.button:hover {
+    box-shadow: 0 4px 25px rgba(225, 0, 255, 1);
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+.done {
+    background: #69fffa;
+    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: sans-serif;
+    font-size: 17px;
+
+}
+
+.progress {
+    background: #69fffa;
+    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.divisions {
+    display: flex;
+    gap: 10px;
+}
+
+#done-div {
+    background-color: white;
+
+    display: flex;
+    padding: 5px;
+    border: 1px solid lightgray;
+    width: 280px;
+    margin-top: 25px;
+
+}
+
+p {
+    margin: 0;
+}
+
+#progress-div {
+    background-color: white;
+
+    display: flex;
+    padding: 5px;
+    border: 1px solid lightgray;
+    width: 280px;
+    margin-top: 25px;
+}
+
+#todos {
+    list-style: none;
+
+    padding: 0;
+    margin-top: 10px;
+
+    font-family: sans-serif;
+    font-size: 19px;
+    color: rgb(44, 44, 44);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 100%;
+}
+
+
+#todos li {
+    background-color: white;
+    margin: 8px;
+    padding: 10px;
+    width: 569px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(100% - 16px);
+
+}
+
+#todos li span {
+    flex: 1;
+    margin-right: 12px;
+    word-break: break-word;
+}
+
+
+
+.apply {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(252, 253, 252);
+    color: rgb(0, 0, 0);
+
+    border: 1px solid lightgray;
+}
+
+.apply i {
+    font-size: 13px;
+    line-height: 1;
+}
+
+.apply:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.apply.checked {
+    background-color: rgb(2, 188, 2);
+    color: white;
+
+}
+
+.apply.checked:hover {
+    background-color: rgba(0, 204, 0, 0.548);
+}
+
+.delete {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    border: 1px solid lightgray;
+    background-color: transparent;
+}
+
+.delete i {
+    font-size: 16px;
+    color: red;
+}
+
+
+
+.delete:hover {
+    background-color: rgb(231, 62, 62);
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.delete:hover i {
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    #input {
+        min-width: 100%;
+        border-radius: 10px;
+    }
+
+    .button {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #todos li {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    #todos li span {
+        word-break: break-word;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 20px;
+        min-height: 100vh;
+    }
+
+    #input {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #todos {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    #todos li {
+        width: 100%;
+    }
+
+    .divisions {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #done-div,
+    #progress-div {
+        width: 90%;
+    }
+}
