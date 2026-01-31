@@ -11,13 +11,15 @@ body {
     min-height: 100vh;
     padding-top: 60px;
 
-    background-color: rgb(243, 241, 241);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 
 
 .container {
-    background-color: rgb(248, 248, 248);
+    background: #020024;
+    background: linear-gradient(100deg, rgba(2, 0, 36, 1) 0%, #090979 35%, rgba(0, 212, 255, 1) 100%);
 
     min-height: 95vh;
     width: 95%;
@@ -28,13 +30,17 @@ body {
 
     justify-content: flex-start;
     padding-top: 40px;
+
+    border-radius: 50px;
+
+
 }
 
 
 
 h1 {
-    background: #69fffa;
-    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -46,7 +52,7 @@ h1 {
     padding: 15px;
     min-width: 500px;
     border-radius: 10px 0 0 10px;
-    border: 0;
+    border: none;
 
     font-family: sans-serif;
     font-size: 16px;
@@ -55,8 +61,8 @@ h1 {
 }
 
 .button {
-    background: #69fffa;
-    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
 
     padding: 15px;
     border-radius: 0px 10px 10px 0;
@@ -69,15 +75,15 @@ h1 {
 }
 
 .button:hover {
-    box-shadow: 0 4px 25px rgba(225, 0, 255, 1);
+    box-shadow: 0 4px 25px rgba(94, 94, 255, 1);
     transition: 0.5s;
 
     cursor: pointer;
 }
 
 .done {
-    background: #69fffa;
-    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -87,8 +93,8 @@ h1 {
 }
 
 .progress {
-    background: #69fffa;
-    background: linear-gradient(90deg, rgba(105, 255, 250, 1) 2%, rgba(89, 89, 227, 1) 53%, rgba(225, 0, 255, 1) 96%);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -106,7 +112,7 @@ h1 {
 
     display: flex;
     padding: 5px;
-    border: 1px solid lightgray;
+    border: 1px solid rgba(94, 94, 255, 1);
     width: 280px;
     margin-top: 25px;
 
@@ -121,7 +127,7 @@ p {
 
     display: flex;
     padding: 5px;
-    border: 1px solid lightgray;
+    border: 1px solid rgba(94, 94, 255, 1);
     width: 280px;
     margin-top: 25px;
 }
@@ -134,7 +140,7 @@ p {
 
     font-family: sans-serif;
     font-size: 19px;
-    color: rgb(44, 44, 44);
+    color: rgb(224, 224, 224);
 
     display: flex;
     flex-direction: column;
@@ -145,7 +151,8 @@ p {
 
 
 #todos li {
-    background-color: white;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(94, 94, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
     margin: 8px;
     padding: 10px;
     width: 569px;
@@ -177,7 +184,7 @@ p {
     background-color: rgb(252, 253, 252);
     color: rgb(0, 0, 0);
 
-    border: 1px solid lightgray;
+    border: 1px solid rgba(94, 94, 255, 1);
 }
 
 .apply i {
@@ -191,13 +198,13 @@ p {
 }
 
 .apply.checked {
-    background-color: rgb(2, 188, 2);
+    background-color: rgba(94, 94, 255, 1);
     color: white;
 
 }
 
 .apply.checked:hover {
-    background-color: rgba(0, 204, 0, 0.548);
+    background-color: rgb(112, 112, 248);
 }
 
 .delete {
@@ -210,21 +217,21 @@ p {
 
     color: white;
 
-    border: 1px solid lightgray;
+    border: 1px solid rgba(94, 94, 255, 1);
     background-color: transparent;
 }
 
 .delete i {
     font-size: 16px;
-    color: red;
+    color: rgba(94, 94, 255, 1);
 }
 
 
 
 .delete:hover {
-    background-color: rgb(231, 62, 62);
+    background-color: rgba(94, 94, 255, 1);
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid (94, 94, 255, 1);
 }
 
 .delete:hover i {
