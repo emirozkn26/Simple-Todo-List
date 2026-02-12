@@ -9,7 +9,7 @@ body {
     align-items: center;
 
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 10px;
 
     background: #020024;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -57,7 +57,13 @@ h1 {
     font-family: sans-serif;
     font-size: 16px;
 
-    box-shadow: 1px 1px 25px gray
+    box-shadow: 1px 1px 25px gray;
+    transition: 1s;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: 0px 0px 25px rgba(0, 213, 255, 0.829);
 }
 
 .button {
@@ -72,12 +78,11 @@ h1 {
 
     font-family: sans-serif;
     font-size: 16px;
+    transition: 1s;
 }
 
 .button:hover {
-    box-shadow: 0 4px 25px rgba(94, 94, 255, 1);
-    transition: 0.5s;
-
+    box-shadow: 0 4px 25px rgba(0, 212, 255, 1);
     cursor: pointer;
 }
 
